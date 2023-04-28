@@ -1,0 +1,25 @@
+#action recognition config file
+
+device: '0'
+#yolo
+detectors:
+  yolov7:
+    weights: ./detectors/yolov7/weight/yolo_weight/best.pt
+    engine: ./detectors/yolov7/weight/trt_weight/yolov7x.trt
+    img_size : 640
+    conf_thres: 0.5
+    iou_thres: 0.45
+    agnostic_nms: False
+    augment: False
+    no_trace: True
+    classes: 0
+
+trackers:
+  bytetrack:
+    track_thresh: 0.5
+    track_buffer: 30
+    match_thresh: 0.8
+    aspect_ratio_thresh: 1.6
+    min_box_area: 10
+    fps: 30
+    mot20: False

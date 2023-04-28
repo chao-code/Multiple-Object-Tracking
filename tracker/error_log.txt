@@ -1,0 +1,42 @@
+MotChallenge2DBox
+bytetrack
+Traceback (most recent call last):
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\eval.py", line 218, in eval_sequence
+    raw_data = dataset.get_raw_seq_data(tracker, seq)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\datasets\_base_dataset.py", line 93, in get_raw_seq_data
+    raw_tracker_data = self._load_raw_file(tracker, seq, is_gt=False)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\datasets\mot_challenge_2d_box.py", line 221, in _load_raw_file
+    raise TrackEvalException(
+trackeval.utils.TrackEvalException: Tracking data contains the following invalid timesteps in seq MOT17-02-DPM: 0, 
+
+
+
+
+
+MotChallenge2DBox
+bytetrack_03_25_11_23
+Traceback (most recent call last):
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\eval.py", line 218, in eval_sequence
+    raw_data = dataset.get_raw_seq_data(tracker, seq)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\datasets\_base_dataset.py", line 93, in get_raw_seq_data
+    raw_tracker_data = self._load_raw_file(tracker, seq, is_gt=False)
+  File "D:\note_code\code\Python\yolov7\tracker\trackeval\datasets\mot_challenge_2d_box.py", line 221, in _load_raw_file
+    raise TrackEvalException(
+trackeval.utils.TrackEvalException: Tracking data contains the following invalid timesteps in seq MOT17-02-DPM: 0, 
+
+
+
+
+
